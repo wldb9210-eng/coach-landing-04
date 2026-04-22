@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Petal — Hanging Garden K-Beauty Studio. Brightening rituals tended by hand in West Hollywood.">
+  <title>Petal — A garden, suspended.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300..600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ========== 0. Invitation Gate ========== -->
+<div id="petal-gate" class="gate">
+  <figure class="gate__lotus">
+    <img src="images/gate-lotus.jpg" alt="">
+  </figure>
+  <div class="gate__veil"></div>
+  <div class="gate__content">
+    <h1 class="gate__title">PETAL</h1>
+    <p class="gate__subcopy">
+      A <span class="ink-word">garden</span>, <em>suspended.</em><br>
+      Between sky and skin.
+    </p>
+    <button type="button" class="gate__enter" id="gate-enter" aria-label="Tap to enter Petal">— TAP TO ENTER —</button>
+  </div>
+</div>
+
+<!-- ========== 1. Nav ========== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <nav class="nav__group nav__group--left" aria-label="Primary">
+      <a href="#lineup" class="nav__link">CATALOG</a>
+      <a href="#process" class="nav__link">RITUALS</a>
+    </nav>
+    <a href="#hero" class="nav__logo" aria-label="Petal home">PETAL</a>
+    <nav class="nav__group nav__group--right" aria-label="Secondary">
+      <a href="#ingredients" class="nav__link">GARDEN</a>
+      <a href="#final-cta" class="nav__link">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ========== 2. Hero ========== -->
+<section class="hero" id="hero" aria-labelledby="hero-h1">
+  <figure class="hero__figure" data-parallax>
+    <img src="images/hero-bloom-field.png" alt="A suspended bloom field" class="hero__image">
+    <div class="hero__sun-glow" aria-hidden="true"></div>
+  </figure>
+
+  <div class="hero__text">
+    <p class="sub-label dream-wake">EST. 2026 · WEST HOLLYWOOD · BY APPOINTMENT</p>
+    <h1 id="hero-h1" class="h1 hero__h1 dream-wake text-breath">
+      A <span class="ink-word">garden</span>,<br>
+      <em><span class="ink-word">suspended.</span></em>
+    </h1>
+    <p class="hero__subcopy dream-wake">
+      K-beauty brightening, tended by hand.<br>
+      Distilled from the garden above.
+    </p>
+    <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--pulse hero__cta dream-wake">
+      BOOK THE BLOOM RITUAL →
+    </a>
+  </div>
+</section>
+
+<!-- ========== 3. Philosophy ========== -->
+<section class="philosophy" id="philosophy" aria-labelledby="philosophy-label">
+  <div class="container philosophy__grid">
+    <aside class="philosophy__label">
+      <p id="philosophy-label" class="sub-label sub-label--stack" data-fade>
+        OUR AESTHETIC<br>
+        IS BLOOM, NOT BRIGHTNESS.<br>
+        <span class="ink-word">PETAL</span> BY PETAL.
+      </p>
+    </aside>
+    <div class="philosophy__body" data-fade>
+      <p>We believe skin is not a surface to correct, but a <span class="ink-word">garden</span> to tend.</p>
+      <p>At <span class="ink-word">Petal</span>, we brighten by layering — rose by rose, leaf by leaf. Never harsh. Never rushed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. Ritual Lineup ========== -->
+<section class="lineup" id="lineup" aria-labelledby="lineup-h2">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="lineup-h2" class="h2 bloom-unfold">THE RITUALS</h2>
+      <p class="section-head__sub">Three ways to <span class="ink-word">bloom.</span></p>
+    </header>
+    <div class="lineup__grid" data-stagger-group>
+      <article class="card lineup__card" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/lineup-lily-pink.png" alt="Lily petals in pink">
+        </figure>
+        <p class="card__tag">N.01</p>
+        <h3 class="card__title">Bloom Ritual</h3>
+        <p class="card__meta">90 MIN · $280</p>
+        <p class="card__desc">Rose · Lotus<br>Layered brightening</p>
+        <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="card__cta">BOOK →</a>
+      </article>
+      <article class="card lineup__card" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/lineup-white-stamen.png" alt="White stamen detail">
+        </figure>
+        <p class="card__tag">N.02</p>
+        <h3 class="card__title">Dew Veil Study</h3>
+        <p class="card__meta">60 MIN · $180</p>
+        <p class="card__desc">Jasmine · Centella<br>Daily glow ritual</p>
+        <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="card__cta">BOOK →</a>
+      </article>
+      <article class="card lineup__card" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/gate-lotus.jpg" alt="Lotus in quiet water">
+        </figure>
+        <p class="card__tag">N.03</p>
+        <h3 class="card__title">Garden Ceremony</h3>
+        <p class="card__meta">120 MIN · $380</p>
+        <p class="card__desc">Full protocol<br>Signature experience</p>
+        <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="card__cta">BOOK →</a>
+      </article>
+      <article class="card lineup__card lineup__card--addon" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/1.png" alt="White peony bloom">
+        </figure>
+        <p class="card__tag">+A</p>
+        <h3 class="card__title">Oil Infusion</h3>
+        <p class="card__meta">ADD-ON · +$40</p>
+        <p class="card__desc">Camellia · Rose<br>Layered seal</p>
+        <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="card__cta">ADD →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 5. Belief (Dark) ========== -->
+<section class="belief dark veil-lift" id="belief" aria-labelledby="belief-quote">
+  <figure class="belief__bg">
+    <img src="images/belief-face-lily.png" alt="" data-parallax>
+  </figure>
+  <div class="belief__overlay" aria-hidden="true"></div>
+  <blockquote class="belief__quote" id="belief-quote" data-fade>
+    <p><em>We believe skin is tended,<br>not treated.</em></p>
+    <p class="belief__tag"><em><span class="ink-word">Petal</span> by petal.</em></p>
+  </blockquote>
+</section>
+
+<!-- ========== 6. Ingredients ========== -->
+<section class="ingredients" id="ingredients" aria-labelledby="ingredients-h2">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="ingredients-h2" class="h2 bloom-unfold">SOURCED FROM THE <span class="ink-word">GARDEN</span> ABOVE</h2>
+      <p class="section-head__sub">Tended by hand. Distilled with care.</p>
+    </header>
+    <div class="ingredients__grid" data-stagger-group>
+      <article class="card ingredient" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/2.png" alt="Golden nectar essence bubbles">
+        </figure>
+        <p class="card__tag">N.01</p>
+        <h3 class="card__title">Golden Nectar</h3>
+        <p class="card__latin"><em>Aurum essence</em></p>
+        <p class="card__effect">RADIANCE</p>
+      </article>
+      <article class="card ingredient" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/ingredient-golden-pour.png" alt="Golden botanical elixir pour">
+        </figure>
+        <p class="card__tag">N.02</p>
+        <h3 class="card__title">Botanical Elixir</h3>
+        <p class="card__latin"><em>Jasminum sambac</em></p>
+        <p class="card__effect">HYDRATION</p>
+      </article>
+      <article class="card ingredient" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/3.png" alt="Honey veil drip on a blossom">
+        </figure>
+        <p class="card__tag">N.03</p>
+        <h3 class="card__title">Honey Veil</h3>
+        <p class="card__latin"><em>Mel floris</em></p>
+        <p class="card__effect">NECTAR</p>
+      </article>
+      <article class="card ingredient" data-stagger>
+        <figure class="card__img img-shimmer">
+          <img src="images/ingredient-oil-macro.png" alt="Petal oil macro">
+        </figure>
+        <p class="card__tag">N.04</p>
+        <h3 class="card__title">Petal Oil</h3>
+        <p class="card__latin"><em>Camellia japonica</em></p>
+        <p class="card__effect">BRIGHTENING</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7. Process ========== -->
+<section class="process" id="process" aria-labelledby="process-h2">
+  <div class="container">
+    <header class="section-head">
+      <h2 id="process-h2" class="h2 bloom-unfold">THE GARDEN CEREMONY</h2>
+      <p class="section-head__sub">Three movements. One <span class="ink-word">bloom.</span></p>
+    </header>
+  </div>
+  <div class="process__rows">
+    <div class="process__row process__row--01">
+      <div class="process__text" data-fade>
+        <p class="process__num">01</p>
+        <p class="process__label">DISCOVERY</p>
+        <p class="process__body">A quiet consultation. We read your skin like a <span class="ink-word">garden</span> — its weather, its seasons.</p>
+      </div>
+      <figure class="process__img img-shimmer">
+        <img src="images/process-water-bottle.png" alt="Mineral water for the discovery ritual">
+      </figure>
+    </div>
+    <div class="process__row process__row--02">
+      <figure class="process__img img-shimmer">
+        <img src="images/process-tulip-profile.png" alt="Tulip profile in warm light">
+      </figure>
+      <div class="process__text" data-fade>
+        <p class="process__num">02</p>
+        <p class="process__label">RITUAL</p>
+        <p class="process__body">The hands-on protocol. Layered extracts, warm steam, gentle rhythms. Eyes closed.</p>
+      </div>
+    </div>
+    <div class="process__row process__row--03">
+      <div class="process__text" data-fade>
+        <p class="process__num">03</p>
+        <p class="process__label">INTEGRATION</p>
+        <p class="process__body">Take the <span class="ink-word">garden</span> home. A tailored routine, calibrated to your rhythm.</p>
+      </div>
+      <figure class="process__img img-shimmer">
+        <img src="images/process-backlight-neck.png" alt="Backlit neck in integration stage">
+      </figure>
+    </div>
+  </div>
+  <p class="process__chapter-end" aria-hidden="true">— END OF RITUAL —</p>
+</section>
+
+<!-- ========== 8. Signature Ritual Deep Dive ========== -->
+<section class="signature" id="signature" aria-labelledby="signature-h2">
+  <figure class="signature__img img-shimmer">
+    <img src="images/4.png" alt="Sun-kissed skin with dewy luminosity">
+  </figure>
+  <div class="signature__body">
+    <p class="sub-label">N.01 · 90 MIN · $280</p>
+    <h2 id="signature-h2" class="h2 bloom-unfold">THE <span class="ink-word">BLOOM</span> RITUAL</h2>
+    <p class="signature__lead">90 minutes of layered brightening.</p>
+    <p>A signature protocol built on seven petals.<br>
+      Korean steam opens the gate.<br>
+      Rose essence wakes the skin.<br>
+      Lotus calms. Jasmine brightens.<br>
+      Camellia seals in the bloom.</p>
+    <p class="signature__list-title">What you leave with:</p>
+    <ul class="signature__list">
+      <li>visible luminosity</li>
+      <li>skin that feels tended, not treated</li>
+      <li>a sample to continue at home</li>
+    </ul>
+    <p class="signature__meta">90 min · $280</p>
+    <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--pulse">BOOK THIS RITUAL →</a>
+  </div>
+</section>
+
+<!-- ========== 9. About the Aesthetician ========== -->
+<section class="about" id="about" aria-labelledby="about-h2">
+  <div class="container about__grid">
+    <figure class="about__img img-shimmer" data-fade>
+      <img src="images/final-blur-gold.jpg" alt="Aesthetician, soft blurred portrait">
+    </figure>
+    <div class="about__text" data-fade>
+      <p class="sub-label">THE HAND BEHIND THE BLOOM</p>
+      <h2 id="about-h2" class="h2 bloom-unfold">Hands that know<br>the <em><span class="ink-word">bloom.</span></em></h2>
+      <p>Fifteen years behind the chair. Trained in Seoul's quiet skincare rituals, refined in LA's clinical precision.</p>
+      <p><span class="ink-word">Petal</span> is where those two worlds meet — and where your skin gets to be tended, not treated.</p>
+      <p class="about__sign"><em>By appointment only.<br>— J. Park, Founder</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 10. Testimonial (Dark) ========== -->
+<section class="testimonial dark veil-lift" id="testimonial" aria-labelledby="testimonial-heading">
+  <figure class="testimonial__bg">
+    <img src="images/testimonial-facial.png" alt="" data-parallax>
+  </figure>
+  <div class="testimonial__overlay" aria-hidden="true"></div>
+  <h2 id="testimonial-heading" class="visually-hidden">Client voices</h2>
+  <div class="testimonial__quotes" data-fade>
+    <blockquote class="testimonial__quote">
+      <p><em>&ldquo;I left with skin that felt lit<br>from somewhere quieter than light.&rdquo;</em></p>
+      <footer class="testimonial__who">— M.K., client since 2026</footer>
+    </blockquote>
+    <blockquote class="testimonial__quote">
+      <p><em>&ldquo;The first ritual where I didn&rsquo;t feel rushed.<br>My skin remembered something I&rsquo;d forgotten.&rdquo;</em></p>
+      <footer class="testimonial__who">— Lauren S., editor, client since 2026</footer>
+    </blockquote>
+    <blockquote class="testimonial__quote">
+      <p><em>&ldquo;I came for brightening. I left with stillness —<br>and skin that looked like it had slept for a week.&rdquo;</em></p>
+      <footer class="testimonial__who">— Danielle K., writer, client since 2026</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ========== 11. FAQ ========== -->
+<section class="faq" id="faq" aria-labelledby="faq-h2">
+  <div class="container faq__grid">
+    <figure class="faq__img img-shimmer" data-fade>
+      <img src="images/faq-curtain-face.png" alt="">
+    </figure>
+    <div class="faq__items" data-fade>
+      <h2 id="faq-h2" class="h2 bloom-unfold">QUIET QUESTIONS</h2>
+      <details class="faq__item">
+        <summary>What is K-beauty brightening, really?</summary>
+        <p>Not whitening. Not bleaching. Brightening is the slow art of layering light back into skin — through hydration, barrier repair, and pigment balance. It takes rituals, not injections.</p>
+      </details>
+      <details class="faq__item">
+        <summary>How often should I come?</summary>
+        <p>Most rituals settle in over three visits across six to eight weeks. Some bloom faster. We'll pace it together.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is this safe for sensitive skin?</summary>
+        <p>Yes. Every ritual begins with a patch consultation. Our protocols lean toward calming and barrier-building before anything else.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Do you carry your own products?</summary>
+        <p>A small curated line is in bloom — available only after your first ritual, to ensure the right match.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 12. Final CTA + Footer ========== -->
+<section class="final-cta veil-lift" id="final-cta" aria-labelledby="final-h1">
+  <div class="final-cta__content" data-fade>
+    <h1 id="final-h1" class="h1 final-cta__h1 text-breath">
+      Begin your<br><em><span class="ink-word">garden.</span></em>
+    </h1>
+    <p class="final-cta__sub">By appointment. One guest at a time.</p>
+    <a href="https://calendly.com/petal-studio/bloom-ritual" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--pulse cta-btn--large">BOOK N.01 RITUAL →</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <p class="sub-label"><span class="ink-word">PETAL</span></p>
+      <p>A Hanging Garden<br>skincare studio.<br>West Hollywood, CA</p>
+    </div>
+    <div class="footer__col">
+      <p class="sub-label">CONTACT</p>
+      <p>By appointment only<br>hello@petal.studio<br>(310) XXX-XXXX</p>
+    </div>
+    <div class="footer__col">
+      <p class="sub-label">FOLLOW</p>
+      <p>Instagram @petalstudio<br>Journal →</p>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>&copy; PETAL STUDIO · EST. 2026 · WEST HOLLYWOOD</p>
+    <p><em>Tended by hand. 花 by 花.</em></p>
+  </div>
+</footer>
+
+</body>
+</html>
